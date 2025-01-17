@@ -6,7 +6,7 @@ function login() {
 
   if (user == "admin" && pass == "12345") {
     alert("Login Berhasil");
-    form.setAttribute("Action", "/projek_uas/backend/pages/index.html");
+    form.setAttribute("Action", "/backend/pages/index.html");
   } else {
     alert("Login Gagal Boyy!!");
   }
