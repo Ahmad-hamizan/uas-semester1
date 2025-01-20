@@ -6,7 +6,7 @@ function login() {
 
   if (user == "admin" && pass == "12345") {
     alert("Login Berhasil");
-    form.setAttribute("Action", "/uas-semester1/backend/pages");
+    form.setAttribute("Action", "/uas-semester1/backend/pages/");
   } else {
     alert("Login Gagal Boyy!!");
   }
