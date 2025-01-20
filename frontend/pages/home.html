@@ -4,76 +4,115 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sekolah</title>
+    <link rel="stylesheet" href="../src/output.css" />
     <link
       rel="stylesheet"
-      href="../src/output.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <!-- Hero Section -->
-    <div class="container mx-auto bg-slate-400 p-4 sm:p-8" id="home">
+    <div
+      class="container mx-auto bg-slate-400 p-4 sm:p-8"
+      id="home"
+      data-aos="fade-down"
+      data-aos-easing="linear"
+      data-aos-duration="1000"
+    >
       <div class="flex flex-row sm:flex-row justify-between items-center gap-4">
         <h1 class="text-2xl sm:text-3xl font-bold">
           Sekolah
-          <span class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent bg-clip-text">Terbaik</span>
+          <span
+            class="bg-gradient-to-l from-blue-400 to-white text-transparent bg-clip-text"
+            >Terbaik</span
+          >
         </h1>
-        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-          
+        <button
+          class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+        >
           <a href="login.html"><i class="fa-solid fa-door-open"></i>Login</a>
         </button>
       </div>
-      
-      <div class="w-full flex flex-col md:flex-row items-center justify-center p-5 gap-8">
+
+      <div
+        class="w-full flex flex-col md:flex-row items-center justify-center p-5 gap-8"
+      >
         <div class="w-full md:w-1/2 flex-col space-y-4">
           <h2 class="text-2xl sm:text-3xl font-bold">
             Sekolah Terpadu
-            <span class="bg-gradient-to-l from-blue-400 via-blue-500 to-blue-600 text-transparent bg-clip-text">Nurul Fikri</span>
+            <span
+              class="bg-gradient-to-l from-blue-400 via-blue-500 to-blue-600 text-transparent bg-clip-text"
+              >Nurul Fikri</span
+            >
           </h2>
           <h6 class="text-sm sm:text-base">
-            Membentuk Generasi Beriman, Cerdas, dan Berprestasi
-
-            🌟 Pendidikan Islami Terpadu
-            Menggabungkan nilai-nilai keislaman dengan pembelajaran modern untuk mencetak pemimpin masa depan yang berakhlak mulia.
+            Membentuk Generasi Beriman, Cerdas, dan Berprestasi 🌟 Pendidikan
+            Islami Terpadu Menggabungkan nilai-nilai keislaman dengan
+            pembelajaran modern untuk mencetak pemimpin masa depan yang
+            berakhlak mulia.
           </h6>
-          <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-            <a href="#about"><i class="p-1 fa-solid fa-arrow-right"></i>Let's Go</a>
+          <button
+            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+          >
+            <a href="#form"
+              ><i class="p-1 fa-solid fa-arrow-right"></i>Daftar</a
+            >
           </button>
         </div>
         <div class="w-full md:w-1/2">
-          <img src="https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1186&q=80" 
-               alt="School Building" 
-               class="rounded-xl w-full h-auto object-cover" />
+          <img
+            src="https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1186&q=80"
+            alt="School Building"
+            class="rounded-xl w-full h-auto object-cover"
+          />
         </div>
       </div>
     </div>
 
     <!-- About -->
-    <div class="container mx-auto p-4 sm:p-5 my-8 sm:my-14" id="about">
+    <div
+      class="container mx-auto p-4 sm:p-5 my-8 sm:my-14"
+      id="about"
+      data-aos="zoom-in"
+      data-aos-easing="linear"
+      data-aos-duration="700"
+    >
       <div class="flex flex-col md:flex-row justify-center border-2 p-3 gap-6">
-        <img src="../img/book.jpg" 
-             alt="Books" 
-             class="w-full md:w-1/2 h-auto object-cover rounded-lg" />
+        <img
+          src="../img/book.jpg"
+          alt="Books"
+          class="w-full md:w-1/2 h-auto object-cover rounded-lg"
+        />
         <div class="flex-col p-3">
           <h3 class="text-xl font-semibold">
             Tentang
-            <span class="bg-gradient-to-l from-blue-400 via-blue-500 to-blue-600 text-transparent bg-clip-text">Kami</span>
+            <span
+              class="bg-gradient-to-l from-blue-400 via-blue-500 to-blue-600 text-transparent bg-clip-text"
+              >Kami</span
+            >
           </h3>
           <h6 class="text-2xl sm:text-3xl pt-1 font-medium">
             Membangun Kecerdasan Melalui Kami
           </h6>
           <p class="pt-5 pb-10">
             Nurul Fikri Mencetak Generasi Beriman, Berilmu, dan Berprestasi
-
- sekolah islami terpadu yang berfokus pada pembentukan karakter unggul melalui pendidikan berkualitas. Kami menggabungkan nilai-nilai keislaman dengan kurikulum modern untuk menciptakan generasi cerdas, kreatif, dan berakhlak mulia.
-
-
+            sekolah islami terpadu yang berfokus pada pembentukan karakter
+            unggul melalui pendidikan berkualitas. Kami menggabungkan
+            nilai-nilai keislaman dengan kurikulum modern untuk menciptakan
+            generasi cerdas, kreatif, dan berakhlak mulia.
           </p>
           <div class="flex flex-col sm:flex-row gap-4">
-            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
-              <a href="">Daftar</a>
+            <button
+              class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
+            >
+              <a href="#form">Daftar</a>
             </button>
-            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+            <button
+              class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
+            >
               <a href="">Hubungi Kami</a>
             </button>
           </div>
@@ -82,255 +121,484 @@
     </div>
 
     <!-- Why Choose Us -->
-    <div class="container mx-auto p-4 sm:p-5 my-8 sm:my-14" id="why">
+    <div
+      class="container mx-auto p-4 sm:p-5 my-8 sm:my-14"
+      id="why"
+      data-aos="zoom-in"
+      data-aos-easing="linear"
+      data-aos-duration="700"
+    >
       <div class="w-full">
         <h2 class="text-2xl font-semibold font-serif text-center">
           Kenapa <span class="text-blue-400">Memilih Kami?</span>
         </h2>
       </div>
-      <hr class="w-1/3 mx-auto h-1 my-8 bg-gray-200 border-0 rounded dark:bg-gray-700" />
-      
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 p-5">
-        <div class="flex flex-col items-center justify-center bg-blue-400 rounded-lg p-4">
+      <hr
+        class="w-1/3 mx-auto h-1 my-8 bg-gray-200 border-0 rounded dark:bg-gray-700"
+      />
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 p-5 text-white">
+        <div
+          class="flex flex-col items-center justify-center bg-blue-400 rounded-lg p-4 hover:scale-105"
+        >
           <i class="fa-solid fa-book text-4xl sm:text-5xl pt-2"></i>
           <h3 class="font-semibold p-3 text-2xl sm:text-3xl text-center">
             Edukasi Terbaik
           </h3>
           <p class="text-center">
-            Nurul Fikri memberikan pendidikan terbaik yang menggabungkan ilmu pengetahuan dengan nilai-nilai islami. Kami mempersiapkan siswa untuk menjadi pribadi cerdas, berkarakter, dan siap menghadapi tantangan global.
-
-            Dengan kurikulum terpadu, fasilitas modern, dan pendidik berkompeten, setiap siswa mendapat kesempatan untuk berkembang secara maksimal.
-            
-
+            Kami mempersiapkan siswa untuk menjadi pribadi cerdas, berkarakter,
+            dan siap menghadapi tantangan global. Dengan kurikulum terpadu,
+            fasilitas modern, dan pendidik berkompeten, setiap siswa mendapat
+            kesempatan untuk berkembang secara maksimal.
           </p>
         </div>
-        
-        <div class="flex flex-col items-center justify-center bg-blue-400 rounded-lg p-4">
+
+        <div
+          class="flex flex-col items-center justify-center bg-blue-400 rounded-lg p-4 hover:scale-105"
+        >
           <i class="fa-solid fa-chalkboard-user text-4xl sm:text-5xl pt-2"></i>
           <h3 class="font-semibold p-3 text-2xl sm:text-3xl text-center">
             Pengajar Terbaik
           </h3>
           <p class="text-center">
-            Nurul Fikri menghadirkan pengajar profesional yang berdedikasi. Dengan keahlian tinggi dan pendekatan islami, guru kami tidak hanya mengajar, tetapi juga membimbing siswa menjadi pribadi berkarakter dan berprestasi.
-
-            Bersama pengajar terbaik, masa depan cerah menanti Anda.
-            
-            
+            Nurul Fikri menghadirkan pengajar profesional yang berdedikasi.
+            Dengan keahlian tinggi dan pendekatan islami, guru kami tidak hanya
+            mengajar, tetapi juga membimbing siswa menjadi pribadi berkarakter
+            dan berprestasi. Bersama pengajar terbaik, masa depan cerah menanti
+            Anda.
           </p>
         </div>
-        
-        <div class="flex flex-col items-center justify-center bg-blue-400 rounded-lg p-4">
+
+        <div
+          class="flex flex-col items-center justify-center bg-blue-400 rounded-lg p-4 hover:scale-105"
+        >
           <i class="fa-regular fa-thumbs-up text-4xl sm:text-5xl pt-2"></i>
           <h3 class="font-semibold p-3 text-2xl sm:text-3xl text-center">
             Sekolah Rekomendasi
           </h3>
           <p class="text-center">
-            Nurl Fikri menghadirkan pendidikan berkualitas yang mengintegrasikan kurikulum modern dan nilai-nilai islami. Dengan guru profesional, fasilitas lengkap, dan pembinaan karakter, kami mencetak generasi berprestasi, berakhlak mulia, dan siap menghadapi dunia.
-
-Raih masa depan cerah bersama kami!
-
+            Nurul Fikri menghadirkan pendidikan berkualitas yang
+            mengintegrasikan kurikulum modern dan nilai-nilai islami. Dengan
+            guru profesional, fasilitas lengkap, dan pembinaan karakter, kami
+            mencetak generasi berprestasi, berakhlak mulia, dan siap menghadapi
+            dunia.
           </p>
         </div>
-        
-        <div class="flex flex-col items-center justify-center bg-blue-400 rounded-lg p-4">
+
+        <div
+          class="flex flex-col items-center justify-center bg-blue-400 rounded-lg p-4 hover:scale-105"
+        >
           <i class="fa-regular fa-star text-4xl sm:text-5xl pt-2"></i>
           <h3 class="font-semibold p-3 text-2xl sm:text-3xl text-center">
             Akreditasi A
           </h3>
           <p class="text-center">
-            Nurul Fikri dengan Akreditasi A merupakan bukti keunggulan dalam pendidikan. Predikat ini mencerminkan kualitas kurikulum, fasilitas, dan pendidik yang berstandar tinggi. Kami berkomitmen mencetak generasi cerdas, berkarakter, dan siap bersaing di masa depan.
-
-Pilih Nurul Fikri untuk masa depan gemilang!
+            Nurul Fikri dengan Akreditasi A merupakan bukti keunggulan dalam
+            pendidikan. Predikat ini mencerminkan kualitas kurikulum, fasilitas,
+            dan pendidik yang berstandar tinggi. Kami berkomitmen mencetak
+            generasi cerdas, berkarakter, dan siap bersaing di masa depan. Pilih
+            Nurul Fikri untuk masa depan gemilang!
           </p>
         </div>
       </div>
     </div>
 
     <!-- Promo -->
-    <div class="container mx-auto p-4 sm:p-5 bg-gradient-to-r from-blue-400 via-blue-300 to-blue-200" id="promo">
+    <div
+      class="container mx-auto p-4 sm:p-5 bg-gradient-to-r from-blue-400 via-blue-300 to-blue-200"
+      id="promo"
+      data-aos="zoom-in"
+      data-aos-easing="linear"
+      data-aos-duration="700"
+    >
       <div class="flex flex-col lg:flex-row gap-6 p-5">
         <div class="w-full lg:w-1/3 p-2">
-          <h3 class="text-2xl font-semibold font-serif text-center p-5">
+          <h3 class="text-2xl font-semibold font-serif text-center p-5 text-white">
             Paket Gedung
-            <span class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent bg-clip-text">
+            <span
+              class="bg-gradient-to-r from-purple-500 to-pink-500 text-transparent bg-clip-text"
+            >
               Sekolah Nurul Fikri
             </span>
             Nih!!
           </h3>
-          <p class="text-center lg:text-left">
-            Kami menawarkan dua pilihan paket gedung untuk mendukung kegiatan pembelajaran yang nyaman dan berkualitas:
+          <p class="text-center lg:text-left text-white">
+            Kami menawarkan dua pilihan paket gedung untuk mendukung kegiatan
+            pembelajaran yang nyaman dan berkualitas:
           </p>
         </div>
-        
+
         <!-- Pricing Cards -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 w-full lg:w-2/3">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 w-full lg:w-2/3"
+        >
           <!-- Package 1 -->
-          <div class="flex flex-col border-2 bg-white rounded-lg">
+          <div class="flex flex-col border-2 bg-white rounded-lg hover:scale-105">
             <div class="p-5">
-              <h3 class="text-2xl font-semibold font-serif text-center">Paket 1</h3>
-              <h5 class="text-center flex justify-center items-center p-5">Rp. 1.000.000</h5>
-              <p class="text-center">
-                Paket 1: Pendaftaran Standar
-              </p>
+              <h3 class="text-2xl font-semibold font-serif text-center">
+                Paket 1
+              </h3>
+              <h5 class="text-center flex justify-center items-center p-5">
+                Rp. 1.000.000
+              </h5>
+              <p class="text-center">Paket 1: Pendaftaran Standar</p>
             </div>
             <div class="p-3 space-y-3">
-                <div key={i} class="px-3">
-                  <h6 class="flex items-center gap-2 justify-center">
-                    <i class="fa-regular fa-circle-check text-green-500"></i>
-                    Akses ke ruang kelas dengan fasilitas dasar
-                  </h6>
-                  <hr class="bg-gray-400 my-2" />
-                </div>
-                <div key={i} class="px-3">
-                  <h6 class="flex items-center gap-2 justify-center">
-                    <i class="fa-regular fa-circle-check text-green-500"></i>
-                    Laboratorium Sains dan Komputer standar.
-                  </h6>
-                  <hr class="bg-gray-400 my-2" />
-                </div>
-                <div key={i} class="px-3">
-                  <h6 class="flex items-center gap-2 justify-center">
-                    <i class="fa-regular fa-circle-check text-green-500"></i>
-                    Kegiatan ekstrakurikuler dasar (Olahraga, Seni, dan Kegiatan Sosial).
-                  </h6>
-                  <hr class="bg-gray-400 my-2" />
-                </div>
-                <div key={i} class="px-3">
-                  <h6 class="flex items-center gap-2 justify-center">
-                    <i class="fa-regular fa-circle-check text-green-500"></i>
-                    Layanan bimbingan akademik reguler.
-                  </h6>
-                  <hr class="bg-gray-400 my-2" />
-                </div>
-                <div key={i} class="px-3">
-                  <h6 class="flex items-center gap-2 justify-center">
-                    <i class="fa-regular fa-circle-check text-green-500"></i>
-                    Akses ke perpustakaan dan ruang baca
-                  </h6>
-                  <hr class="bg-gray-400 my-2" />
-                </div>
+              <div key="{i}" class="px-3">
+                <h6 class="flex items-center gap-2 justify-center">
+                  <i class="fa-regular fa-circle-check text-green-500"></i>
+                  Akses ke ruang kelas dengan fasilitas dasar
+                </h6>
+                <hr class="bg-gray-400 my-2" />
+              </div>
+              <div key="{i}" class="px-3">
+                <h6 class="flex items-center gap-2 justify-center">
+                  <i class="fa-regular fa-circle-check text-green-500"></i>
+                  Laboratorium Sains dan Komputer standar.
+                </h6>
+                <hr class="bg-gray-400 my-2" />
+              </div>
+              <div key="{i}" class="px-3">
+                <h6 class="flex items-center gap-2 justify-center">
+                  <i class="fa-regular fa-circle-check text-green-500"></i>
+                  Kegiatan ekstrakurikuler dasar (Olahraga, Seni, dan Kegiatan
+                  Sosial).
+                </h6>
+                <hr class="bg-gray-400 my-2" />
+              </div>
+              <div key="{i}" class="px-3">
+                <h6 class="flex items-center gap-2 justify-center">
+                  <i class="fa-regular fa-circle-check text-green-500"></i>
+                  Layanan bimbingan akademik reguler.
+                </h6>
+                <hr class="bg-gray-400 my-2" />
+              </div>
+              <div key="{i}" class="px-3">
+                <h6 class="flex items-center gap-2 justify-center">
+                  <i class="fa-regular fa-circle-check text-green-500"></i>
+                  Akses ke perpustakaan dan ruang baca
+                </h6>
+                <hr class="bg-gray-400 my-2" />
+              </div>
             </div>
           </div>
 
           <!-- Package 2 -->
-          <div class="flex flex-col border-2 bg-white rounded-lg">
+          <div class="flex flex-col border-2 bg-white rounded-lg hover:scale-105">
             <div class="p-5">
-              <h3 class="text-2xl font-semibold font-serif text-center">Paket 2</h3>
-              <h5 class="text-center flex justify-center items-center p-5">Rp. 1.500.000</h5>
-              <p class="text-center">
-                Paket 2: Pendaftaran Premium
-              </p>
+              <h3 class="text-2xl font-semibold font-serif text-center">
+                Paket 2
+              </h3>
+              <h5 class="text-center flex justify-center items-center p-5">
+                Rp. 1.500.000
+              </h5>
+              <p class="text-center">Paket 2: Pendaftaran Premium</p>
             </div>
             <div class="p-3 space-y-3">
-                <div key={i} class="px-3">
-                  <h6 class="flex items-center justify-center gap-2">
-                    <i class="fa-regular fa-circle-check text-green-500"></i>
-                    Ruang kelas ber-AC dengan teknologi pembelajaran terkini.
-                  </h6>
-                  <hr class="bg-gray-400 my-2" />
-                </div>
-                <div key={i} class="px-3">
-                  <h6 class="flex items-center justify-center gap-2">
-                    <i class="fa-regular fa-circle-check text-green-500"></i>
-                    Laboratorium Sains, Komputer, dan Bahasa lengkap.
-                  </h6>
-                  <hr class="bg-gray-400 my-2" />
-                </div>
-                <div key={i} class="px-3">
-                  <h6 class="flex items-center justify-center gap-2">
-                    <i class="fa-regular fa-circle-check text-green-500"></i>
-                    Program ekstrakurikuler unggulan (Olahraga, Seni, Teknologi, Kepemimpinan).
-                  </h6>
-                  <hr class="bg-gray-400 my-2" />
-                </div>
-                <div key={i} class="px-3">
-                  <h6 class="flex items-center justify-center gap-2">
-                    <i class="fa-regular fa-circle-check text-green-500"></i>
-                    Bimbingan intensif akademik dan karakter
-                  </h6>
-                  <hr class="bg-gray-400 my-2" />
-                </div>
-                <div key={i} class="px-3">
-                  <h6 class="flex items-center justify-center gap-2">
-                    <i class="fa-regular fa-circle-check text-green-500"></i>
-                    Fasilitas olahraga modern dan ruang kegiatan serbaguna.
-                  </h6>
-                  <hr class="bg-gray-400 my-2" />
-                </div>
+              <div key="{i}" class="px-3">
+                <h6 class="flex items-center justify-center gap-2">
+                  <i class="fa-regular fa-circle-check text-green-500"></i>
+                  Ruang kelas ber-AC dengan teknologi pembelajaran terkini.
+                </h6>
+                <hr class="bg-gray-400 my-2" />
+              </div>
+              <div key="{i}" class="px-3">
+                <h6 class="flex items-center justify-center gap-2">
+                  <i class="fa-regular fa-circle-check text-green-500"></i>
+                  Laboratorium Sains, Komputer, dan Bahasa lengkap.
+                </h6>
+                <hr class="bg-gray-400 my-2" />
+              </div>
+              <div key="{i}" class="px-3">
+                <h6 class="flex items-center justify-center gap-2">
+                  <i class="fa-regular fa-circle-check text-green-500"></i>
+                  Program ekstrakurikuler unggulan (Olahraga, Seni, Teknologi,
+                  Kepemimpinan).
+                </h6>
+                <hr class="bg-gray-400 my-2" />
+              </div>
+              <div key="{i}" class="px-3">
+                <h6 class="flex items-center justify-center gap-2">
+                  <i class="fa-regular fa-circle-check text-green-500"></i>
+                  Bimbingan intensif akademik dan karakter
+                </h6>
+                <hr class="bg-gray-400 my-2" />
+              </div>
+              <div key="{i}" class="px-3">
+                <h6 class="flex items-center justify-center gap-2">
+                  <i class="fa-regular fa-circle-check text-green-500"></i>
+                  Fasilitas olahraga modern dan ruang kegiatan serbaguna.
+                </h6>
+                <hr class="bg-gray-400 my-2" />
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
 
+    <!-- Form -->
+    <div
+      class="flex flex-col items-center justify-center container mx-auto p-4 sm:p-5 my-8 sm:my-14"
+      id="form"
+      data-aos="zoom-in"
+      data-aos-easing="linear"
+      data-aos-duration="700"
+    >
+      <h3 class="p-10 text-3xl font-semibold">
+        Form <span class="text-blue-500">Pendaftaran</span>
+      </h3>
+      <!-- Author: FormBold Team -->
+      <div class="mx-auto w-full max-w-[550px] bg-white">
+        <form>
+          <div class="mb-5">
+            <label
+              for="name"
+              class="mb-3 block text-base font-medium text-[#07074D]"
+            >
+              Nama Lengkap
+            </label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Masukkan Nama Lengkap"
+              class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+            />
+          </div>
+          <div class="mb-5">
+            <label
+              for="phone"
+              class="mb-3 block text-base font-medium text-[#07074D]"
+            >
+              Nomor Telepon
+            </label>
+            <input
+              type="text"
+              name="phone"
+              id="phone"
+              placeholder="Masukkan Nomor Telepon"
+              class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+            />
+          </div>
+          <div class="mb-5">
+            <label
+              for="email"
+              class="mb-3 block text-base font-medium text-[#07074D]"
+            >
+              Alamat Email
+            </label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Masukkan Alamat Email"
+              class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+            />
+          </div>
+          <div class="-mx-3 flex flex-wrap">
+            <div class="w-full px-3 sm:w-1/2">
+              <div class="mb-5">
+                <label
+                  for="date"
+                  class="mb-3 block text-base font-medium text-[#07074D]"
+                >
+                  Tanggal Pendaftaran
+                </label>
+                <input
+                  type="date"
+                  name="date"
+                  id="date"
+                  class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+                />
+              </div>
+            </div>
+            <div class="w-full px-3 sm:w-1/2">
+              <div class="mb-5">
+                <label
+                  for="time"
+                  class="mb-3 block text-base font-medium text-[#07074D]"
+                >
+                  Waktu Pendaftaran
+                </label>
+                <input
+                  type="time"
+                  name="time"
+                  id="time"
+                  class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-5 pt-3">
+            <label
+              class="mb-5 block text-base font-semibold text-[#07074D] sm:text-xl"
+            >
+              Alamat Detail
+            </label>
+            <div class="-mx-3 flex flex-wrap">
+              <div class="w-full px-3 sm:w-1/2">
+                <div class="mb-5">
+                  <input
+                    type="text"
+                    name="area"
+                    id="area"
+                    placeholder="Masukkan Area"
+                    class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+                  />
+                </div>
+              </div>
+              <div class="w-full px-3 sm:w-1/2">
+                <div class="mb-5">
+                  <input
+                    type="text"
+                    name="city"
+                    id="city"
+                    placeholder="Masukkan Kota"
+                    class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+                  />
+                </div>
+              </div>
+              <div class="w-full px-3 sm:w-1/2">
+                <div class="mb-5">
+                  <input
+                    type="text"
+                    name="state"
+                    id="state"
+                    placeholder="Masukkan Provinsi"
+                    class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+                  />
+                </div>
+              </div>
+              <div class="w-full px-3 sm:w-1/2">
+                <div class="mb-5">
+                  <input
+                    type="text"
+                    name="post-code"
+                    id="post-code"
+                    placeholder="Kode Pos"
+                    class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <button
+              class="hover:shadow-form w-full rounded-md bg-[#6A64F1] py-3 px-8 text-center text-base font-semibold text-white outline-none hover:scale-90"
+            >
+              Daftar
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
     <!-- Program -->
-    <div class="container mx-auto p-4 sm:p-5 my-8 sm:my-14" id="prodi">
+    <div
+      class="container mx-auto p-4 sm:p-5 my-8 sm:my-14"
+      id="prodi"
+      data-aos="zoom-in"
+      data-aos-easing="linear"
+      data-aos-duration="700"
+    >
       <div class="w-full">
         <h2 class="text-2xl font-semibold font-serif text-center">
           Program
-          <span class="bg-gradient-to-r from-blue-400 via-blue-500 to-blue-300 text-transparent bg-clip-text">
+          <span
+            class="bg-gradient-to-r from-blue-400 via-blue-500 to-blue-300 text-transparent bg-clip-text"
+          >
             Studi
           </span>
         </h2>
       </div>
-      <hr class="w-1/3 mx-auto h-1 my-8 bg-gray-200 border-0 rounded dark:bg-gray-700" />
-      
+      <hr
+        class="w-1/3 mx-auto h-1 my-8 bg-gray-200 border-0 rounded dark:bg-gray-700"
+      />
+
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8 p-5">
-          <div key={i} class="flex flex-col items-center">
-            <div class="bg-blue-300 rounded-full w-32 h-32 sm:w-40 sm:h-40 flex items-center justify-center p-4 m-4">
-              <i class="text-5xl sm:text-6xl lg:text-7xl fa-solid fa-graduation-cap"></i>
-            </div>
-            <h3 class="font-semibold text-xl sm:text-2xl text-center">
-              Program Studi IPA (Ilmu Pengetahuan Alam)
-            </h3>
-            <p class="text-center max-w-md">
-              Menyediakan dasar yang kuat untuk melanjutkan studi di bidang Teknologi, Kedokteran, dan Sains.
-            </p>
+        <div key="{i}" class="flex flex-col items-center">
+          <div
+            class="bg-blue-300 rounded-full w-32 h-32 sm:w-40 sm:h-40 flex items-center justify-center p-4 m-4 hover:scale-90"
+          >
+            <i
+              class="text-5xl sm:text-6xl lg:text-7xl fa-solid fa-graduation-cap"
+            ></i>
           </div>
-          <div key={i} class="flex flex-col items-center">
-            <div class="bg-blue-300 rounded-full w-32 h-32 sm:w-40 sm:h-40 flex items-center justify-center p-4 m-4">
-              <i class="text-5xl sm:text-6xl lg:text-7xl fa-solid fa-graduation-cap"></i>
-            </div>
-            <h3 class="font-semibold text-xl sm:text-2xl text-center">
-              Program Studi IPS (Ilmu Pengetahuan Sosial)
-            </h3>
-            <p class="text-center max-w-md">
-              Membekali siswa untuk berkarir di bidang Manajemen, Ekonomi, dan Pemerintahan.
-            </p>
+          <h3 class="font-semibold text-xl sm:text-2xl text-center">
+            Program Studi IPA (Ilmu Pengetahuan Alam)
+          </h3>
+          <p class="text-center max-w-md">
+            Menyediakan dasar yang kuat untuk melanjutkan studi di bidang
+            Teknologi, Kedokteran, dan Sains.
+          </p>
+        </div>
+        <div key="{i}" class="flex flex-col items-center">
+          <div
+            class="bg-blue-300 rounded-full w-32 h-32 sm:w-40 sm:h-40 flex items-center justify-center p-4 m-4 hover:scale-90"
+          >
+            <i
+              class="text-5xl sm:text-6xl lg:text-7xl fa-solid fa-graduation-cap"
+            ></i>
           </div>
-          <div key={i} class="flex flex-col items-center">
-            <div class="bg-blue-300 rounded-full w-32 h-32 sm:w-40 sm:h-40 flex items-center justify-center p-4 m-4">
-              <i class="text-5xl sm:text-6xl lg:text-7xl fa-solid fa-graduation-cap"></i>
-            </div>
-            <h3 class="font-semibold text-xl sm:text-2xl text-center">
-              Program Studi Agama Islam
-            </h3>
-            <p class="text-center max-w-md">
-              Menumbuhkan generasi yang berakhlak mulia dan memiliki pemahaman agama yang mendalam.
-            </p>
+          <h3 class="font-semibold text-xl sm:text-2xl text-center">
+            Program Studi IPS (Ilmu Pengetahuan Sosial)
+          </h3>
+          <p class="text-center max-w-md">
+            Membekali siswa untuk berkarir di bidang Manajemen, Ekonomi, dan
+            Pemerintahan.
+          </p>
+        </div>
+        <div key="{i}" class="flex flex-col items-center">
+          <div
+            class="bg-blue-300 rounded-full w-32 h-32 sm:w-40 sm:h-40 flex items-center justify-center p-4 m-4 hover:scale-90"
+          >
+            <i
+              class="text-5xl sm:text-6xl lg:text-7xl fa-solid fa-graduation-cap"
+            ></i>
           </div>
-          <div key={i} class="flex flex-col items-center">
-            <div class="bg-blue-300 rounded-full w-32 h-32 sm:w-40 sm:h-40 flex items-center justify-center p-4 m-4">
-              <i class="text-5xl sm:text-6xl lg:text-7xl fa-solid fa-graduation-cap"></i>
-            </div>
-            <h3 class="font-semibold text-xl sm:text-2xl text-center">
-              Program Studi Multimedia dan Teknologi
-            </h3>
-            <p class="text-center max-w-md">
-              Pengembangan keterampilan dalam media digital, programming, dan produksi video.
-            </p>
+          <h3 class="font-semibold text-xl sm:text-2xl text-center">
+            Program Studi Agama Islam
+          </h3>
+          <p class="text-center max-w-md">
+            Menumbuhkan generasi yang berakhlak mulia dan memiliki pemahaman
+            agama yang mendalam.
+          </p>
+        </div>
+        <div key="{i}" class="flex flex-col items-center">
+          <div
+            class="bg-blue-300 rounded-full w-32 h-32 sm:w-40 sm:h-40 flex items-center justify-center p-4 m-4 hover:scale-90"
+          >
+            <i
+              class="text-5xl sm:text-6xl lg:text-7xl fa-solid fa-graduation-cap"
+            ></i>
           </div>
+          <h3 class="font-semibold text-xl sm:text-2xl text-center">
+            Program Studi Multimedia dan Teknologi
+          </h3>
+          <p class="text-center max-w-md">
+            Pengembangan keterampilan dalam media digital, programming, dan
+            produksi video.
+          </p>
+        </div>
       </div>
     </div>
 
     <!-- Footer -->
     <footer class="bg-white shadow-lg mt-8">
       <div class="container mx-auto px-4 py-6">
-        <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+        <div
+          class="flex flex-col md:flex-row justify-between items-center gap-4"
+        >
           <span class="text-sm text-gray-500 text-center md:text-left">
-            © 2025 <a href="" class="hover:underline">Kelompok 05™</a>. All Rights Reserved.
+            © 2025 <a href="" class="hover:underline">Kelompok 05™</a>. All
+            Rights Reserved.
           </span>
-          <ul class="flex flex-wrap justify-center items-center gap-4 text-sm font-medium text-gray-500">
+          <ul
+            class="flex flex-wrap justify-center items-center gap-4 text-sm font-medium text-gray-500"
+          >
             <li><a href="#home" class="hover:underline">Home</a></li>
             <li><a href="#about" class="hover:underline">About</a></li>
             <li><a href="#why" class="hover:underline">Me</a></li>
@@ -340,5 +608,9 @@ Pilih Nurul Fikri untuk masa depan gemilang!
         </div>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
