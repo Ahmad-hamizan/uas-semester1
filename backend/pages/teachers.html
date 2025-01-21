@@ -3,11 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Guru - School Dashboard</title>
+    <title>Guru - Dashboard Sekolah</title>
+    <link rel="website icon" type="png" href="../img/logo.png" />
+
+    <!-- Tailwind -->
     <link rel="stylesheet" href="../src/output.css" />
+    <!-- Animate CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
   </head>
   <body class="bg-gray-100">
-    <div class="min-h-screen flex">
+    <div class="min-h-screen flex animate__animated animate__fadeInLeft">
       <!-- Sidebar (same as other pages) -->
       <div
         class="absolute bg-gray-800 text-white w-72 min-h-screen overflow-y-auto transition-transform transform -translate-x-full ease-in-out duration-200"
@@ -26,16 +34,16 @@
             >
           </div>
           <nav class="mt-4">
-            <a
-              href="index.html"
-              class="block py-2.5 px-4 hover:bg-blue-600"
-            >
+            <a href="index.html" class="block py-2.5 px-4 hover:bg-blue-600">
               Dashboard
             </a>
             <a href="students.html" class="block py-2.5 px-4 hover:bg-blue-600">
               Siswa
             </a>
-            <a href="teachers.html" class="block py-2.5 px-4  bg-blue-700 hover:bg-blue-600">
+            <a
+              href="teachers.html"
+              class="block py-2.5 px-4 bg-blue-700 hover:bg-blue-600"
+            >
               Guru
             </a>
             <a href="classes.html" class="block py-2.5 px-4 hover:bg-blue-600">
@@ -87,30 +95,32 @@
         <!-- Teachers Content -->
         <div class="py-20 px-8">
           <div class="mb-6 flex justify-between items-center">
-            <h1 class="text-2xl font-bold text-gray-900">Teachers</h1>
-            <a href="tmbhguru.html"><button
-              class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700"
+            <h1 class="text-2xl font-bold text-gray-900">Guru</h1>
+            <a href="tmbhguru.html"
+              ><button
+                class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700"
+              >
+                Tambah Guru Baru
+              </button></a
             >
-              Add New Teacher
-            </button></a>
           </div>
 
           <!-- Teachers Grid -->
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <!-- Teacher Card -->
-            <div class="bg-white rounded-lg shadow overflow-hidden">
+            <div class="bg-white rounded-lg shadow overflow-hidden hover:scale-105 hover:duration-300">
               <div class="p-6">
                 <div class="flex items-center">
                   <img
                     class="h-16 w-16 rounded-full"
-                    src="https://ui-avatars.com/api/?name=Sarah+Wilson"
+                    src="https://ui-avatars.com/api/?name=Rahmat+Hidayatullah"
                     alt=""
                   />
                   <div class="ml-4">
                     <h3 class="text-lg font-medium text-gray-900">
                       Rahmat Hidayatullah
                     </h3>
-                    <p class="text-sm text-gray-500">Mathematika</p>
+                    <p class="text-sm text-gray-500">Matematika</p>
                   </div>
                 </div>
                 <div class="mt-4">
@@ -176,12 +186,12 @@
             </div>
 
             <!-- More Teacher Cards -->
-            <div class="bg-white rounded-lg shadow overflow-hidden">
+            <div class="bg-white rounded-lg shadow overflow-hidden hover:scale-105 hover:duration-300">
               <div class="p-6">
                 <div class="flex items-center">
                   <img
                     class="h-16 w-16 rounded-full"
-                    src="https://ui-avatars.com/api/?name=Michael+Brown"
+                    src="https://ui-avatars.com/api/?name=Dwi+Cahyono"
                     alt=""
                   />
                   <div class="ml-4">
@@ -247,13 +257,14 @@
                 </div>
               </div>
             </div>
+
             <!-- More Teacher Cards -->
-            <div class="bg-white rounded-lg shadow overflow-hidden">
+            <div class="bg-white rounded-lg shadow overflow-hidden hover:scale-105 hover:duration-300">
               <div class="p-6">
                 <div class="flex items-center">
                   <img
                     class="h-16 w-16 rounded-full"
-                    src="https://ui-avatars.com/api/?name=Michael+Brown"
+                    src="https://ui-avatars.com/api/?name=Zahra+Annisa"
                     alt=""
                   />
                   <div class="ml-4">
@@ -278,7 +289,7 @@
                         d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                       />
                     </svg>
-                  annisa@gmail.com
+                    annisa@gmail.com
                   </div>
                   <div class="flex items-center text-sm text-gray-500 mt-2">
                     <svg
@@ -294,7 +305,8 @@
                         d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
                       />
                     </svg>
-                    Pengalaman 8 Tahun                  </div>
+                    Pengalaman 8 Tahun
+                  </div>
                 </div>
                 <div class="mt-4 flex space-x-3">
                   <span
@@ -318,19 +330,18 @@
                 </div>
               </div>
             </div>
+
             <!-- More Teacher Cards -->
-            <div class="bg-white rounded-lg shadow overflow-hidden">
+            <div class="bg-white rounded-lg shadow overflow-hidden hover:scale-105 hover:duration-300">
               <div class="p-6">
                 <div class="flex items-center">
                   <img
                     class="h-16 w-16 rounded-full"
-                    src="https://ui-avatars.com/api/?name=Michael+Brown"
+                    src="https://ui-avatars.com/api/?name=Doni+Tri"
                     alt=""
                   />
                   <div class="ml-4">
-                    <h3 class="text-lg font-medium text-gray-900">
-                      Doni Tri
-                    </h3>
+                    <h3 class="text-lg font-medium text-gray-900">Doni Tri</h3>
                     <p class="text-sm text-gray-500">Matematika</p>
                   </div>
                 </div>
@@ -365,7 +376,7 @@
                         d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
                       />
                     </svg>
-                    8 Tahun pengalaman 
+                    8 Tahun pengalaman
                   </div>
                 </div>
                 <div class="mt-4 flex space-x-3">
@@ -390,13 +401,14 @@
                 </div>
               </div>
             </div>
+
             <!-- More Teacher Cards -->
-            <div class="bg-white rounded-lg shadow overflow-hidden">
+            <div class="bg-white rounded-lg shadow overflow-hidden hover:scale-105 hover:duration-300">
               <div class="p-6">
                 <div class="flex items-center">
                   <img
                     class="h-16 w-16 rounded-full"
-                    src="https://ui-avatars.com/api/?name=Michael+Brown"
+                    src="https://ui-avatars.com/api/?name=Indah+Ghifari"
                     alt=""
                   />
                   <div class="ml-4">
@@ -437,7 +449,7 @@
                         d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
                       />
                     </svg>
-                    8 Tahun pengalaman 
+                    8 Tahun pengalaman
                   </div>
                 </div>
                 <div class="mt-4 flex space-x-3">
@@ -462,19 +474,18 @@
                 </div>
               </div>
             </div>
+
             <!-- More Teacher Cards -->
-            <div class="bg-white rounded-lg shadow overflow-hidden">
+            <div class="bg-white rounded-lg shadow overflow-hidden hover:scale-105 hover:duration-300">
               <div class="p-6">
                 <div class="flex items-center">
                   <img
                     class="h-16 w-16 rounded-full"
-                    src="https://ui-avatars.com/api/?name=Michael+Brown"
+                    src="https://ui-avatars.com/api/?name=Angga+Dwi"
                     alt=""
                   />
                   <div class="ml-4">
-                    <h3 class="text-lg font-medium text-gray-900">
-                      Angga Dwi
-                    </h3>
+                    <h3 class="text-lg font-medium text-gray-900">Angga Dwi</h3>
                     <p class="text-sm text-gray-500">Biologi</p>
                   </div>
                 </div>
@@ -535,7 +546,6 @@
               </div>
             </div>
 
-            <!-- Add more teacher cards as needed -->
           </div>
         </div>
       </main>

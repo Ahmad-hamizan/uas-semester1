@@ -3,14 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Siswa - Sekolah Dashboard</title>
+    <title>Siswa - Dashboard Sekolah</title>
+    <link rel="website icon" type="png" href="../img/logo.png" />
+    <!-- Tailwind -->
+    <link rel="stylesheet" href="../src/output.css" />
+    <!-- Animate CSS -->
     <link
-      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
   </head>
   <body class="bg-gray-100 antialiased">
-    <div class="flex flex-col md:flex-row min-h-screen">
+    <div class="flex flex-col md:flex-row min-h-screen animate__animated animate__fadeInLeft">
       <!-- Sidebar (Mobile: Drawer) -->
       <div
         class="absolute bg-gray-800 text-white w-72 min-h-screen overflow-y-auto transition-transform transform -translate-x-full ease-in-out duration-200"
@@ -36,13 +40,13 @@
               href="students.html"
               class="block py-2.5 px-4 bg-blue-700 hover:bg-blue-600"
             >
-            Siswa
+              Siswa
             </a>
             <a href="teachers.html" class="block py-2.5 px-4 hover:bg-blue-600">
               Guru
             </a>
             <a href="classes.html" class="block py-2.5 px-4 hover:bg-blue-600">
-             Kelas
+              Kelas
             </a>
             <a
               href=""
@@ -116,9 +120,7 @@
           <div
             class="flex flex-row md:flex-row justify-between items-center mb-6"
           >
-            <h2 class="text-2xl font-bold text-gray-900 mb-4 md:mb-0">
-              Siswa
-            </h2>
+            <h2 class="text-2xl font-bold text-gray-900 mb-4 md:mb-0">Siswa</h2>
             <a href="tmbhsiswa.html">
               <button
                 class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700"
@@ -133,10 +135,10 @@
             <input
               type="text"
               placeholder="Search students..."
-              class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500"
+              class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 hover:border-blue-500"
             />
             <select
-              class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500"
+              class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 hover:border-blue-500"
             >
               <option>Semua Kelas</option>
               <option>Kelas 9</option>
@@ -145,7 +147,7 @@
               <option>Kelas 12</option>
             </select>
             <select
-              class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500"
+              class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 hover:border-blue-500"
             >
               <option>Semua Kelas</option>
               <option>Kelas A</option>
@@ -160,32 +162,32 @@
               <thead class="bg-gray-50">
                 <tr>
                   <th
-                    class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                    class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider hover:text-black"
                   >
                     Siswa
                   </th>
                   <th
-                    class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                    class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider hover:text-black"
                   >
                     Identitas
                   </th>
                   <th
-                    class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-                  >
-                   Kelas
-                  </th>
-                  <th
-                    class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                    class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider hover:text-black"
                   >
                     Kelas
                   </th>
                   <th
-                    class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                    class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider hover:text-black"
+                  >
+                    Kelas
+                  </th>
+                  <th
+                    class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider hover:text-black"
                   >
                     Status
                   </th>
                   <th
-                    class="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider"
+                    class="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider hover:text-black"
                   >
                     Aksi
                   </th>
@@ -197,16 +199,14 @@
                     <div class="flex items-center">
                       <img
                         class="h-10 w-10 rounded-full"
-                        src="https://ui-avatars.com/api/?name=Alice+Johnson"
+                        src="https://ui-avatars.com/api/?name=Rizcow+Zuama"
                         alt=""
                       />
                       <div class="ml-4">
                         <div class="text-sm font-medium text-gray-900">
                           Rizcow Zuama
                         </div>
-                        <div class="text-sm text-gray-500">
-                          Zuama@gmail.com
-                        </div>
+                        <div class="text-sm text-gray-500">Zuama@gmail.com</div>
                       </div>
                     </div>
                   </td>
@@ -242,7 +242,7 @@
                     <div class="flex items-center">
                       <img
                         class="h-10 w-10 rounded-full"
-                        src="https://ui-avatars.com/api/?name=Alice+Johnson"
+                        src="https://ui-avatars.com/api/?name=Saputra+Damanik"
                         alt=""
                       />
                       <div class="ml-4">
@@ -287,7 +287,7 @@
                     <div class="flex items-center">
                       <img
                         class="h-10 w-10 rounded-full"
-                        src="https://ui-avatars.com/api/?name=Alice+Johnson"
+                        src="https://ui-avatars.com/api/?name=Syahri+Immadudin"
                         alt=""
                       />
                       <div class="ml-4">

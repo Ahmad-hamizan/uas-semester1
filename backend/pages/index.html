@@ -3,11 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sekolah Dashboard</title>
+    <title>Dashboard Sekolah</title>
+    <link rel="website icon" type="png" href="../img/logo.png" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <!-- Tailwindcss -->
     <link rel="stylesheet" href="../src/output.css" />
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Animate css -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
   </head>
-  <body class="bg-gray-100">
-    <div class="h-screen flex">
+  <body class="bg-gray-100 light">
+    <div class="h-screen flex animate__animated animate__fadeInLeft">
       <!-- Sidebar -->
       <div
         class="absolute bg-gray-800 text-white w-72 min-h-screen overflow-y-auto transition-transform transform -translate-x-full ease-in-out duration-200"
@@ -90,22 +102,24 @@
           <div
             class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-6"
           >
-            <div class="bg-white rounded-lg shadow p-6">
-              <h3 class="text-gray-500 text-sm font-medium">Total Students</h3>
+            <div class="bg-white rounded-lg shadow p-6 hover:shadow-xl">
+              <h3 class="text-gray-500 text-sm font-medium">Total Siswa</h3>
               <p class="text-2xl font-bold text-gray-900">1,234</p>
               <p class="text-green-600 text-sm">↑ 56 Pendaftaran Baru</p>
             </div>
-            <div class="bg-white rounded-lg shadow p-6">
-              <h3 class="text-gray-500 text-sm font-medium">Pendaftaran Baru</h3>
+            <div class="bg-white rounded-lg shadow p-6 hover:shadow-xl">
+              <h3 class="text-gray-500 text-sm font-medium">
+                Pendaftaran Baru
+              </h3>
               <p class="text-2xl font-bold text-gray-900">95.2%</p>
               <p class="text-green-600 text-sm">↑ 2.1% dari bulan lalu</p>
             </div>
-            <div class="bg-white rounded-lg shadow p-6">
+            <div class="bg-white rounded-lg shadow p-6 hover:shadow-xl">
               <h3 class="text-gray-500 text-sm font-medium">Nilai Rata-Rata</h3>
               <p class="text-2xl font-bold text-gray-900">B+</p>
-              <p class="text-blue-600 text-sm">→ table semester ini</p>
+              <p class="text-blue-600 text-sm">→ tabel semester ini</p>
             </div>
-            <div class="bg-white rounded-lg shadow p-6">
+            <div class="bg-white rounded-lg shadow p-6 hover:shadow-xl">
               <h3 class="text-gray-500 text-sm font-medium">Guru Aktif</h3>
               <p class="text-2xl font-bold text-gray-900">87</p>
               <p class="text-green-600 text-sm">↑ 3 karyawan baru</p>
@@ -114,7 +128,7 @@
 
           <!-- Recent Activity and Calendar -->
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 pb-4">
-            <div class="bg-white rounded-lg shadow p-6">
+            <div class="bg-white rounded-lg shadow p-6 hover:shadow-xl">
               <h3 class="text-lg font-medium text-gray-900 mb-4">
                 Aktivitas hari ini
               </h3>
@@ -143,7 +157,9 @@
                     <p class="text-sm font-medium text-gray-900">
                       Nilai baru diposting
                     </p>
-                    <p class="text-sm text-gray-500">Matematika 101 - ujian akhir</p>
+                    <p class="text-sm text-gray-500">
+                      Matematika 101 - ujian akhir
+                    </p>
                     <p class="text-xs text-gray-400">2 jam yang lalu</p>
                   </div>
                 </div>
@@ -171,9 +187,7 @@
                     <p class="text-sm font-medium text-gray-900">
                       Kehadiran ditandai
                     </p>
-                    <p class="text-sm text-gray-500">
-                      Kelas sains - 3 periode
-                    </p>
+                    <p class="text-sm text-gray-500">Kelas sains - Periode ke-3</p>
                     <p class="text-xs text-gray-400">4 jam yang lalu</p>
                   </div>
                 </div>
@@ -209,7 +223,7 @@
                 </div>
               </div>
             </div>
-            <div class="bg-white rounded-lg shadow p-6">
+            <div class="bg-white rounded-lg shadow p-6 hover:shadow-xl">
               <h3 class="text-lg font-medium text-gray-900 mb-4">
                 Acara mendatang
               </h3>
@@ -232,7 +246,9 @@
                     <p class="text-2xl font-bold text-purple-600">18</p>
                   </div>
                   <div class="ml-4">
-                    <p class="text-sm font-medium text-gray-900">Hari olahraga</p>
+                    <p class="text-sm font-medium text-gray-900">
+                      Hari olahraga
+                    </p>
                     <p class="text-sm text-gray-500">Acara sepanjang hari</p>
                   </div>
                 </div>
@@ -252,32 +268,49 @@
             </div>
           </div>
 
-          <!-- Calendar -->
-          <!-- <div class="bg-gray-100 text-gray-900 flex justify-center items-center h-screen">
-            <div class="bg-white shadow-lg rounded-lg p-6 w-96">
-              <div class="flex justify-between items-center mb-4">
-                <button id="prevMonth" class="bg-gray-300 text-white rounded-lg p-2">Prev</button>
-                <h2 id="monthYear" class="text-xl font-semibold">January 2025</h2>
-                <button id="nextMonth" class="bg-gray-300 text-white rounded-lg p-2">Next</button>
+          <div class="calendar w-1/2 m-auto hover:shadow-none">
+            <div class="calendar-header">
+              <span class="month-picker" id="month-picker">February</span>
+              <div class="year-picker">
+                <span class="year-change" id="prev-year">
+                  <pre><</pre>
+                </span>
+                <span id="year">2021</span>
+                <span class="year-change" id="next-year">
+                  <pre>></pre>
+                </span>
               </div>
-              
-              <div class="grid grid-cols-7 gap-1 text-center">
-                <div class="font-semibold text-sm text-gray-600">Sun</div>
-                <div class="font-semibold text-sm text-gray-600">Mon</div>
-                <div class="font-semibold text-sm text-gray-600">Tue</div>
-                <div class="font-semibold text-sm text-gray-600">Wed</div>
-                <div class="font-semibold text-sm text-gray-600">Thu</div>
-                <div class="font-semibold text-sm text-gray-600">Fri</div>
-                <div class="font-semibold text-sm text-gray-600">Sat</div>
-              </div>
-              
-              <div id="calendarGrid" class="grid grid-cols-7 gap-1 mt-4"></div>
             </div>
-        </div> -->
+            <div class="calendar-body">
+              <div class="calendar-week-day">
+                <div>Sun</div>
+                <div>Mon</div>
+                <div>Tue</div>
+                <div>Wed</div>
+                <div>Thu</div>
+                <div>Fri</div>
+                <div>Sat</div>
+              </div>
+              <div class="calendar-days"></div>
+            </div>
+            <div class="calendar-footer">
+              <div class="toggle">
+                <span>Dark Mode</span>
+                <div class="dark-mode-switch">
+                  <div class="dark-mode-switch-ident"></div>
+                </div>
+              </div>
+            </div>
+            <div class="month-list"></div>
+          </div>
         </div>
       </main>
     </div>
 
     <script src="../js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
