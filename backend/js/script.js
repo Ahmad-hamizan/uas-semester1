@@ -1,7 +1,7 @@
 // Logout
 function logout() {
   if (confirm("Are you sure you want to logout?")) {
-    window.location.href = "https://ahmad-hamizan.github.io/uas-semester1/frontend/pages/home.html";
+    window.location.href = "/uas-semester1/frontend/pages/home.html";
   } else {
     return false;
   }
